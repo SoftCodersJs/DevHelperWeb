@@ -1,0 +1,8 @@
+.fluid-container {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--primary-dark-color);
+}

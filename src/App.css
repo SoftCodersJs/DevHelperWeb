@@ -1,0 +1,41 @@
+:root {
+  --primary-dark-color: #080204;
+  --secondary-dark-color: #212025;
+  --terciary-dark-color: #17161e;
+  --primary-green-color: #34cb79;
+  --secondary-green-color: #46ad75;
+  --title-color: rgb(225, 225, 230);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+body,
+input,
+button {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  color: var(--text-color);
+}
+
+li,
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--title-color);
+}
