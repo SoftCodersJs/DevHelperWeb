@@ -43,7 +43,7 @@
   max-width: 1200px;
   height: 70vh;
 
-  margin-top: 10vh;
+  margin-top: 20vh;
 }
 
 .hero .txt {
@@ -117,5 +117,5 @@
 .carousel button:enabled
 .carousel button:focus,
 .carousel button:enabled {
-  background-color: #46ad74 !important;
+  background-color: #0ab959 !important;
 }
