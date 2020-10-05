@@ -11,13 +11,14 @@
   display: flex;
   width: 90%;
   max-width: 1200px;
-  
+
   padding-top: 24px;
 }
 
-.header .register-btn, .header .login-btn {
+.header .register-btn,
+.header .login-btn {
   height: 50%;
-  background: #3F3D56;
+  background: #3f3d56;
   border-color: rgb(18, 18, 20);
   padding: 12px 30px;
   color: rgba(255, 255, 255, 0.63);
@@ -32,7 +33,7 @@
   margin: 0 20px;
 }
 
-.logo { 
+.logo {
   height: 60px;
 }
 
@@ -49,13 +50,13 @@
   flex: 1;
 }
 
-.hero .txt h1 {  
+.hero .txt h1 {
   font-size: 54px;
   line-height: 64px;
   color: var(--title-color);
 }
 
-.hero .txt h2 {  
+.hero .txt h2 {
   margin-top: 1vh;
   font-size: 1.4rem;
   color: var(--title-color);
@@ -101,4 +102,20 @@
 
 .hero .img img {
   width: 100%;
+}
+
+.carousel {
+  max-width: 1200px;
+  width: 70%;
+}
+
+.carousel button {
+  background-color: #46ad741f;
+}
+
+.carousel button:hover,
+.carousel button:enabled
+.carousel button:focus,
+.carousel button:enabled {
+  background-color: #46ad74 !important;
 }
