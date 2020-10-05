@@ -6,3 +6,99 @@
   min-height: 100vh;
   background-color: var(--primary-dark-color);
 }
+
+.header {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  
+  padding-top: 24px;
+}
+
+.header .register-btn, .header .login-btn {
+  height: 50%;
+  background: #3F3D56;
+  border-color: rgb(18, 18, 20);
+  padding: 12px 30px;
+  color: rgba(255, 255, 255, 0.63);
+  border-radius: 5px;
+}
+
+.brand {
+  flex: 1;
+}
+
+.register-btn {
+  margin: 0 20px;
+}
+
+.logo { 
+  height: 60px;
+}
+
+.hero {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  height: 70vh;
+
+  margin-top: 10vh;
+}
+
+.hero .txt {
+  flex: 1;
+}
+
+.hero .txt h1 {  
+  font-size: 54px;
+  line-height: 64px;
+  color: var(--title-color);
+}
+
+.hero .txt h2 {  
+  margin-top: 1vh;
+  font-size: 1.4rem;
+  color: var(--title-color);
+}
+
+.hero .txt .entry-btn {
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.644);
+  background: var(--secondary-green-color);
+  width: 25%;
+  border-radius: 3px;
+  padding: 12px 32px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.hero .img {
+  flex: 1;
+}
+
+.hero .img img {
+  width: 100%;
+}
