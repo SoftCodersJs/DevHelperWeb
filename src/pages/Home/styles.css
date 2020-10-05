@@ -129,8 +129,11 @@
 
 @media (min-width: 576px) and (max-width: 1000px) {
   .hero {
-    margin-top: 5vh;
+    margin: 5vh 0;
     height: 30vh;
+  }
+  .questions {
+    margin: 2vh 0;
   }
 }
 
@@ -172,7 +175,7 @@
 .awesome-input {
   width:90%;
   display: block;
-  min-height: calc(1.5em + 0.75rem + 2px);
+  min-height: calc(0.5em + 0.75rem + 2px);
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   font-weight: 400;
@@ -188,12 +191,11 @@
 
 .question-btn {
   margin-left: 15px;
-  min-height: calc(2em + 0.75rem + 2px);
+  min-height: calc(1em + 0.75rem + 2px);
   padding: 0.375rem 0.75rem;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1;
   border: 1px solid transparent;
-  font-size: 1rem;
   border-radius: 0.25rem;
   color: #fff;
   background-color: var(--primary-green-color);
