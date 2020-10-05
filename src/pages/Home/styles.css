@@ -104,6 +104,28 @@
   width: 100%;
 }
 
+@media(max-width: 576px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .login-btn, .register-btn {
+    margin: 10px 0;
+    width: 50%;
+  }
+  .hero {
+    flex-direction: column;
+    margin-top: 5vh;
+  }
+  .hero .txt .entry-btn {
+    width: 55%;
+    margin: 2vh 0 5vh;
+  }
+  .carousel {
+    margin-top: 25vh;
+  }
+}
+
 .carousel {
   max-width: 1200px;
   width: 70%;
