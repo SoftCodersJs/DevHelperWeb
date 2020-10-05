@@ -6,6 +6,7 @@ import Carousel from "react-elastic-carousel";
 import logo from "../../assets/logo.png";
 import community from "../../assets/community.svg";
 import javascript from "../../assets/javascript.png";
+import search from "../../assets/search.png";
 
 import "./styles.css";
 
@@ -58,7 +59,13 @@ const Home = () => {
         </Carousel>
       </div>
       <div className="questions">
-        aaaaa
+        <h1>Faça uma pergunta</h1>
+        <div className="questions-wrapper">
+          <input type="text" className="awesome-input"/>
+          <button className="question-btn">
+            <img src={search} alt="search" className="search-icon"/>
+          </button>
+        </div>
       </div>
     </div>
   );
