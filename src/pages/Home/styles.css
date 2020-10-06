@@ -139,7 +139,13 @@
 
 .carousel {
   max-width: 1200px;
-  width: 70%;
+  width: 80%;
+  margin: 5vh 0;
+  text-align: center;
+}
+
+.carousel h1 {
+  margin-bottom: 5vh;
 }
 
 .carousel button {
@@ -156,7 +162,7 @@
 .questions {
   margin: 10vh 0;
   color: white;
-  height: 30vh;
+  height: 20vh;
   width: 90%;
   max-width: 1200px;
 }
@@ -204,4 +210,21 @@
 
 .search-icon {
   height: calc(2em + 0.75rem + 2px);
+}
+
+.contributors-chart {
+  width: 90%;
+  height: 70vh;
+  max-width: 1200px;
+  margin-bottom: 5vh;
+  color: white;
+}
+
+.footer {
+  padding: 5px 0;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  line-height: 34px;
+  color: var(--title-color);
 }

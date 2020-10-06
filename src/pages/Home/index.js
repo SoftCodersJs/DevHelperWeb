@@ -39,6 +39,8 @@ const Home = () => {
         </div>
       </div>
       <div className="carousel">
+        
+      <h1>Assuntos mais estudados</h1>
         <Carousel showArrows={true}>
           <div>
             <img src={javascript} />
@@ -61,12 +63,15 @@ const Home = () => {
       <div className="questions">
         <h1>Faça uma pergunta</h1>
         <div className="questions-wrapper">
-          <input type="text" className="awesome-input"/>
+          <input type="text" className="awesome-input" />
           <button className="question-btn">
-            <img src={search} alt="search" className="search-icon"/>
+            <img src={search} alt="search" className="search-icon" />
           </button>
         </div>
       </div>
+      <footer className="footer">
+        <p> © Todos os direitos reservado a DevHelper 2020</p>
+      </footer>
     </div>
   );
 };
