@@ -87,9 +87,10 @@ body { overflow-x: hidden; }
 .separa{
     margin-left: 10px;
 }
+
 .body{
     display: flex;
-    height: 1000px;
+    height: 220vh;
     background-color: #C4C4C4;
 }
 .body-sobre-usuario{
@@ -113,15 +114,92 @@ body { overflow-x: hidden; }
     align-items: center;
     color: white;
 
-
 }
 .localização h2{
     font-size: 50px;
+    margin-left: 60px;
 }
 .localização ul{
     list-style: none;
 }
 .localização ul li{
     font-size: 27px;
-    margin-top:5px ;
+    margin:10px 5px;
+    margin-left: 60px;
+    
+}
+.projetos{
+    width: 800px;
+    height: 1000px;
+    margin: 30px 30px;
+    background-color: #333333;
+}
+.experiencia {
+    width: 388px;
+    height:30% ;
+    background-color: #333333;
+    margin: 30px 30px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.experiencia h2{
+    font-size: 50px;
+    margin-left: 60px;
+}
+.oi{
+ width:348px;
+ height: 38px;
+ background-color: #DDDDDD;
+ margin:10px 10px;
+}
+.title_habilidade{
+    margin: 10px;
+}
+.skils1{
+    z-index: 12;
+    width:200px;
+    height: 38px;
+    background-color: #66CB8C;
+    color: black;
+}
+.skils2{
+    z-index: 12;
+    width:300px;
+    height: 38px;
+    background-color: #66CB8C;
+    color: black;
+}
+.skils3{
+    z-index: 12;
+    width:150px;
+    height: 38px;
+    background-color: #66CB8C;
+    color: black;
+}
+.skils4{
+    z-index: 12;
+    width:250px;
+    height: 38px;
+    background-color: #66CB8C;
+    color: black;
+}
+.cursos{
+    width: 388px;
+    height:274px ;
+    background-color: #333333;
+    margin: 30px 30px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+html::-webkit-scrollbar-track{
+    background-color: #666666;
+}
+html::-WEBKIT-scrollbar{
+    width:10px;
+    background-color:red;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: #333333;
 }

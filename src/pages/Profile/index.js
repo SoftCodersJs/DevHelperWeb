@@ -31,23 +31,43 @@ const Profile = () => {
                     
                 </div>{/* terminação sidebar  */}
                 <div className="body">
-
-                    <div className="body-sobre-usuario">
-                        <h2>Sobre</h2>
-                        <p>Aqui fica tudo sobre o usuario</p>
-
-                    </div>
-                    <div className="localização"> 
-                       <h2>localização</h2> <br/>
-                        <ul>
-                        <li> Sua-cidade-Ba</li>
-                         <li> Numero de telefone</li>
-                        <li> Endereço de Email</li>
-                        </ul>
-                    </div>
-                    <div className="projetos">
+                        <div>
+                            <div className="body-sobre-usuario">
+                                <h2>Sobre</h2>
+                                <p>Aqui fica tudo sobre o usuario</p>
+                            </div>
+                            <div className="projetos">
+                                ola
+                            </div>
+                        </div>
+                        <div>
+                            <div className="localização"> 
+                            <h2>localização</h2>
+                            <ul>
+                                <li> Sua-cidade-Ba</li>
+                                <li> Numero de telefone</li>
+                                <li> Endereço de Email</li>
+                            </ul>
+                            </div>
+                            <div className="experiencia"> 
+                            <h2>Habilidades</h2>
+                                    <h3 className="title_habilidade">HTML</h3>
+                                    <div className="oi"><div className="skils1"></div></div>
+                                    <h3  className="title_habilidade">CSS</h3>
+                                    <div className="oi"><div className="skils2"></div></div>
+                                    <h3  className="title_habilidade">REACTJS </h3>
+                                    <div className="oi"> <div className="skils3"></div></div>
+                                    <h3  className="title_habilidade">JAVASCRITP </h3>
+                                    <div className="oi"><div className="skils4"></div></div>
+                            </div>
+                            <div className="cursos"> 
+                            <h2>Cursos</h2>
+                              <p>Curso de Javascript web Full-Stack da Udemy</p>
                         
-                    </div>
+                            </div>
+                        </div>
+                    
+                    
                 </div>{/* terminação body o corpo do site */}
             </div>
             
