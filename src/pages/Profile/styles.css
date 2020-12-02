@@ -1,205 +1,83 @@
 *{
     margin: 0;
     padding: 0;
-    
+    box-sizing: border-box;
 }
-body { overflow-x: hidden; }
-.menu{
+
+.htlm,.body{
+    height: 100vh;
+}
+header{
+    width:100%;
+    height:80px;
+    background: #11100C;
     display: flex;
-    width: 100%;
-    height: 70px;
-    background-color: #11100c;
     justify-content: space-between;
 }
-.windos{
+header .logo{
     width: 100%;
-    height: 100%;
+    max-width: 155px;
 }
-.conteiner{
-    width: 100%;
-    height: 100%;
+header .menu-link{
+    width:10%;
+    height:40px;
+    background: #C4C4C4;
+    border-radius: 10%;
+    margin-right: 30px;
+    color:black;
 }
-.menu-logo {
-    margin-top: 10px;
-    width: 150px;
-    height: 60px;
-}
-
-.meunu-button{
-    background-color:#c4c4c4 ;
-    width: 200px;
-    height: 50px;
-    border-radius: 30px;
-    color: black;
-    margin-top:2px;
-    margin-right:20px ;
-    font-size: 20px;
-    border: none;
-    cursor: pointer;
-}
-.meunu-button:focus {
-    outline: none;
-    box-shadow:none ;
-}
-.pontos button {
-    width: 240px;
-    height: 60px;
-    border: none;
-    font-size: 20px;
-    background: #000000;
-    border-radius: 19px;
-    cursor: pointer;
-    color:white;
-    margin-top: 20px;
-}
-.pontos:focus {
-    outline: none;
-    box-shadow:none ;
+header img, a {
+    margin: 8px;
 }
 
-.sidebar{
-    display: flex;
-    width: 100%;
-    height: 376px;
-    background-color: #333333;
+/*seçao*/
 
-}
-.sidebar-avatar{
-    width: 280px;
-    background-color: white;
-    height: 280px;
-    border-radius: 50%;
-    margin:60px 20px;
-}
-.discription{
-    font-size: 80px;
-    margin-top: 100px;
-}
-
-.icons {
-    width: 35px;
-    height: 35px;
-    background-color: #C4C4C4;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-}
-.separa{
-    margin-left: 10px;
-}
-
-.body{
-    display: flex;
-    height: 220vh;
-    background-color: #C4C4C4;
-}
-.body-sobre-usuario{
-    width: 800px;
-    height: 280px;
-    background-color: #333333;
-    margin: 30px 30px;
-}
-.body-sobre-usuario h2{
-    font-size: 50px;
-}
-.body-sobre-usuario p{
-    font-size: 30px;
-}
-.localização{
-    width: 388px;
-    height:274px ;
-    background-color: #333333;
-    margin: 30px 30px;
-    justify-content: center;
+section{
+    width: 100%; 
+    height:300px;
+    background: #333333;
+    display:flex;
     align-items: center;
-    color: white;
-
+    justify-content: space-between;
 }
-.localização h2{
-    font-size: 50px;
-    margin-left: 60px;
+section img {
+    width: 100%;
+    max-width: 230px;
+    border-radius: 50%;
+    margin-left: 180px;
 }
-.localização ul{
-    list-style: none;
+section .description{
+    font-size: 2.6rem;
+    margin-right: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.localização ul li{
-    font-size: 27px;
-    margin:10px 5px;
-    margin-left: 60px;
+.sidebar-icons a{
+    color: White;
+}
+svg:nth-child(1n){
+    margin-left: 15px;
+}
+section a {
+    color:black;
+}
+section a button{
+    
+    width:90%;
+    height:40px;
+}
+main{
+    display:grid;
+    width:100%;
+    height: 100%;
+    padding:20px;
+    background: #C4C4C4;
     
 }
-.projetos{
-    width: 800px;
-    height: 1000px;
-    margin: 30px 30px;
-    background-color: #333333;
-}
-.experiencia {
-    width: 388px;
-    height:30% ;
-    background-color: #333333;
-    margin: 30px 30px;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-.experiencia h2{
-    font-size: 50px;
-    margin-left: 60px;
-}
-.oi{
- width:348px;
- height: 38px;
- background-color: #DDDDDD;
- margin:10px 10px;
-}
-.title_habilidade{
-    margin: 10px;
-}
-.skils1{
-    z-index: 12;
-    width:200px;
-    height: 38px;
-    background-color: #66CB8C;
-    color: black;
-}
-.skils2{
-    z-index: 12;
-    width:300px;
-    height: 38px;
-    background-color: #66CB8C;
-    color: black;
-}
-.skils3{
-    z-index: 12;
-    width:150px;
-    height: 38px;
-    background-color: #66CB8C;
-    color: black;
-}
-.skils4{
-    z-index: 12;
-    width:250px;
-    height: 38px;
-    background-color: #66CB8C;
-    color: black;
-}
-.cursos{
-    width: 388px;
-    height:274px ;
-    background-color: #333333;
-    margin: 30px 30px;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-html::-webkit-scrollbar-track{
-    background-color: #666666;
-}
-html::-WEBKIT-scrollbar{
-    width:10px;
-    background-color:red;
-}
-html::-webkit-scrollbar-thumb{
-    background-color: #333333;
+
+.sobre-usuario{
+  width:80%;
+  height:50%;
+  background: #333333;
 }
