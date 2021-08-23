@@ -50,9 +50,9 @@ main{
 	height: auto;
   background: none;
 	display: flex;
-  flex-direction: column;
-	justify-content: center;
+  flex-direction: row;
   align-items: center;
+	justify-content: center;
 }
 main .container{
   width:65%;
@@ -72,7 +72,14 @@ main .container input{
     outline: none;
     padding-left: 12px;
 }
-main .container #editorjs{
+main .container .container_editor{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .container .container_editor #editorjs{
  width: 100%;
  height:auto;
   background: white;

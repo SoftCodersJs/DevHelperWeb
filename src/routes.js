@@ -7,7 +7,6 @@ import Login from "./pages/Login/index"
 import Register from "./pages/Register/index"
 import Profile from "./pages/Profile/index"
 import duvidas from "./pages/duvidas/index"
-
 const Routes = () => {
     return (
         <BrowserRouter>

@@ -1,50 +1,45 @@
 import React from 'react';
-import A from'../../componentes/Button';
-import Div from '../../componentes/Div'
 import {useState} from 'react';
-import EditorJS from '@editorjs/editorjs';
-import logo from "..  /../assets/logo.png"; 
+import A from'../../componentes/Button';
+import logo from "../../assets/logo.png"; 
 import "./style.css";
-
-
-const Askques = () => {
-  //editor 
-    const Header = require('@editorjs/header');
-    const Paragraph = require('@editorjs/paragraph');
-    const SimpleImage = require('@editorjs/simple-image');
-    const Embed = require('@editorjs/embed');
-    const Delimiter = require('@editorjs/delimiter');
+import EditorJS  from'@editorjs/editorjs'
+import Header from '@editorjs/header';
+import Delimiter from '@editorjs/delimiter';
+import Paragraph from '@editorjs/paragraph';
+import Embed from '@editorjs/embed';
+import Image from '@editorjs/image';
+const Askques = () => { 
     const editor = new EditorJS({
-        holder: 'editorjs',
-    /** 
-         * Available Tools list. 
-         * Pass Tool's class or Settings object for each Tool you want to use 
-         */
-        tools:{
-           header:Header,
-           delimiter: Delimiter,
-           Paragraph: {
-            class: Paragraph,
-            inlineToolbar: true,
-          },
-          embed: Embed,
-          image: SimpleImage,
-        }
-    });
+    holder: 'editorjs',
+/** 
+     * Available Tools list. 
+     * Pass Tool's class or Settings object for each Tool you want to use 
+     */
+   tools:{
+       header:Header,
+       delimiter: Delimiter,
+       paragraph: {
+        class: Paragraph,
+        inlineToolbar: true,
+      },
+      embed: Embed,
+      image: Image,
+   }
+}
+);  
     const [spans,setSpans] = useState([]);
     const [revisar,setRevisar]= useState('Revisar');
 
     function addTag(){
-      let pai = document.querySelector('.tags');
       let inpunt = document.querySelector('.tags input').value;
-      setSpans((spans) => spans += '<span>#'+inpunt+'</span>');
-      inpunt = '';
-      
+      setSpans((spans)=>spans += `<span>#${inpunt}</span>`);
+      console.log(spans);
+      document.querySelector('.tags input').value = '';
     };
     
     function MudarButt(){
-      setRevisar('Enviar pergunta')
-      console.log(revisar);
+      setRevisar('Enviar pergunta');
     }
     return (
       <div className="body">
@@ -58,16 +53,17 @@ const Askques = () => {
             <input placeholder='Qual é sua duvida,pequeno gafanhoto ?' type="text" />
             <br/>
             <h3>Corpo</h3>
-            <div id="editorjs"></div>
+            <div class="container_editor">
+                <div id="editorjs"></div>
+            </div>
           </div>
           <div className='tags'>
             <input placeholder='Digite Tags...' type="text" />
             <button onClick={addTag}>Add Tag</button>
-            <Div className="enquetes">
-              {spans}
-            </Div> 
+            <div className="enquetes" dangerouslySetInnerHTML={{__html:spans}}> 
+            </div> 
           </div>
-          <A text='#1'onClick={MudarButt}>{revisar}</A>
+          <A text={MudarButt}>{revisar}</A>
        	</main>
       </div>
     )

@@ -1,5 +1,7 @@
+import React from 'react';
+
 export default function A(props){
 	return(
-		<a href={props.text}>{props.children}</a>
+		<a onClick={props.text}>{props.children}</a>
 	);
 }
